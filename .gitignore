@@ -1,0 +1,6 @@
+# dirs
+node_modules
+.history
+
+# files
+.DS_Store
