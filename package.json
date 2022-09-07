@@ -1,8 +1,8 @@
 {
-  "name": "vanilla-js-template",
+  "name": "pecode-qa-automation-test-task",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
