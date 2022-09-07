@@ -9,13 +9,14 @@
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:cypress/recommended",
+    "plugin:chai-friendly/recommended",
     "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["cypress", "prettier"],
+  "plugins": ["cypress", "chai-friendly", "prettier"],
   "rules": {
     "prettier/prettier": "error"
   }
