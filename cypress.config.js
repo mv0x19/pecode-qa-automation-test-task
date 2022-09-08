@@ -1,9 +1,19 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'custom-title',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
+  },
   e2e: {
-    baseUrl:
-      'https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php',
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
+    },
+    baseUrl: 'https://www.pecodesoftware.com/qa-portal/registerlogin/registerlogin.php',
   },
   env: {
     user: {
