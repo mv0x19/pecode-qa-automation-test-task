@@ -6,6 +6,7 @@ import { Login } from '../pages/Login';
 const page = new Login();
 
 beforeEach(() => {
+  // Write an automation script using a JavaScript testing framework which will open: https://www.pecodesoftware.com/qa-portal/greet.php page.
   page.visit();
 });
 
