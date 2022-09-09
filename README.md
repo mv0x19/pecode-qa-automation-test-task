@@ -46,7 +46,7 @@ npm run test
 docker build -t pecode-qa-automation-test-task:1.0.0 .
 ```
 
-### Run Cypress tests from Docker container you created:
+### Run Cypress tests in Docker container from image you created:
 
 ```
 docker run -i -v $PWD:/pecode-qa-automation-test-task -t pecode-qa-automation-test-task:1.0.0
